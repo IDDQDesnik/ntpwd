@@ -1,11 +1,20 @@
 # ntpwd
 Based on Offline Windows Password &amp; Registry Editor by Petter N Hagen https://pogostick.net/~pnh/ntpasswd/
 
-В связи с тем, что оригинальный проект не работает на компьютерах с более чем 4 гигабайтати памяти, был создан этот форк.
-Так как ядро ntpasswd присутствует в SystemRescueCd (http://www.system-rescue-cd.org/Download/), были взяты оригинальные скрипты и из них было убрано все лишнее.
+В связи с тем, что оригинальный проект не работает на компьютерах с 4 и более гигабайтати оперативной памяти, был создан этот форк.
+К счастью, основная утилита chntpw присутствует в составе SystemRescueCd (http://www.system-rescue-cd.org/Download/). Но она довольно неудобна при работе напрямую, поэтому были взяты оригинальные скрипты и из них были убраны все ненужные теперь процедуры предварительной инициализации.
 
 Способ использования:
-1. Закинуть на флешку с установленным SystemRescueCd.
+1. Скопировать файла на флешку с установленным SystemRescueCd.
 2. Загрузиться в SystemRescueCd
 3. Если необходимо, сделать файлы исполнимыми (chmod +x *.sh)
 4. Запустить main.sh и следовать инструкциям на экране
+
+
+This fork has been created because the original project does not work on computers with 4 and above gigabytes of RAM. The traces of ntpasswd kernel have been removed from original scripts because it is already present in SystemRescueCd (http://www.system-rescue-cd.org/Download/).
+
+How to use:
+1. Copy files on a flash drive with SystemRescueCd installed.
+2. Boot in SystemRescueCd
+3. Make the files executable (chmod +x *.sh) if necessary
+4. Run main.sh and follow the instructions on the screen
